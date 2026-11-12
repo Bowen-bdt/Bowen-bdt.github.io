@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bowen | Personal Homepage</title>
+  <meta name="description" content="Personal homepage of Bowen, student at Xi'an Jiaotong-Liverpool University.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Bowen</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#network">Network Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" aria-label="Toggle dark mode">&#9790;</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Hi, I'm <span class="accent">Bowen</span></h1>
+      <p class="typed" data-words="Student at XJTLU|Networking enthusiast|Distributed computing learner"></p>
+      <p class="lead">This website was built for CSI205TC Networking and Distributed Computing and is deployed with GitHub Pages.</p>
+      <a class="btn" href="#projects">View my projects</a>
+    </section>
+
+    <section id="about" class="card reveal">
+      <h2>About me</h2>
+      <!-- TODO: edit this paragraph -->
+      <p>I am a <strong>[Year 2]</strong> student majoring in <strong>[your major]</strong> at Xi'an Jiaotong-Liverpool University (XJTLU). I am interested in computer networks, distributed systems and big data processing.</p>
+    </section>
+
+    <section id="skills" class="card reveal">
+      <h2>Skills</h2>
+      <!-- TODO: edit skills and levels (0-100) -->
+      <div class="skill"><span>Python</span><div class="bar"><i style="--w:80%"></i></div></div>
+      <div class="skill"><span>Socket programming (TCP/UDP)</span><div class="bar"><i style="--w:70%"></i></div></div>
+      <div class="skill"><span>Hadoop &amp; HDFS</span><div class="bar"><i style="--w:60%"></i></div></div>
+      <div class="skill"><span>Apache Spark / PySpark</span><div class="bar"><i style="--w:65%"></i></div></div>
+      <div class="skill"><span>Linux &amp; Wireshark</span><div class="bar"><i style="--w:70%"></i></div></div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Course projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Video streaming over TCP &amp; UDP</h3>
+          <p>A Python socket application that streams video with both protocols, analysed with Wireshark.</p>
+        </article>
+        <article class="card">
+          <h3>MapReduce in plain Python</h3>
+          <p>Word counting with explicit Map, Shuffle and Reduce stages using only the standard library.</p>
+        </article>
+        <article class="card">
+          <h3>Hadoop vs Spark WordCount</h3>
+          <p>The same word-count job on Hadoop MapReduce and Apache Spark, compared on performance.</p>
+        </article>
+        <article class="card">
+          <h3>Machine learning with Spark MLlib</h3>
+          <p>A full ML pipeline: preprocessing, training, prediction and evaluation on a real dataset.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="network" class="card reveal">
+      <h2>Your connection to this site</h2>
+      <p>These values are measured live in your browser and illustrate the network concepts in the coursework.</p>
+      <table class="netinfo">
+        <tr><th>Page URL</th><td id="ni-url">-</td></tr>
+        <tr><th>Protocol (HTTP version)</th><td id="ni-proto">-</td></tr>
+        <tr><th>DNS lookup time</th><td id="ni-dns">-</td></tr>
+        <tr><th>TCP + TLS connect time</th><td id="ni-tcp">-</td></tr>
+        <tr><th>Time to first byte</th><td id="ni-ttfb">-</td></tr>
+        <tr><th>Full page load</th><td id="ni-load">-</td></tr>
+      </table>
+    </section>
+
+    <section id="contact" class="card reveal">
+      <h2>Contact</h2>
+      <!-- TODO: edit or remove links -->
+      <p>GitHub: <a href="https://github.com/Bowen-bdt">github.com/Bowen-bdt</a></p>
+      <p>Email: [your university email]</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Bowen · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
